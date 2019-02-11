@@ -95,16 +95,8 @@ public class TicTacToe {
 
 
     /**
-     * Dummy method that's easy to test.
-     */
-    public static int printBoard(int abc) {
-      return(abc++);
-    }
-
-  
-  
-    /**
      * Check for special commands such as quit or man.
+     * @param command    A user command, for example to quit or to dispolay help
      */
     public static void parseCommandLine(int command) {
       if (command == 99) { System.exit(0); }
@@ -130,6 +122,8 @@ public class TicTacToe {
     /**
      * Check if anyone has won yet.
      * Check rows first.
+     * @param theBoard The current status of the board.
+     * @return The id of winner. A return value of "none" indicates that no one has won yet.
      */
     public static String checkWinner(String[] theBoard) {
       if (theBoard[0] == theBoard[1] && theBoard[0] == theBoard[2]) { return theBoard[0]; }
