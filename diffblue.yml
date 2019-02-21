@@ -1,0 +1,13 @@
+phases:
+-
+ timeout: 20
+ cbmcArguments:
+   unwind: 1
+-
+ timeout: 30
+ cbmcArguments:
+   unwind: 1
+-
+ timeout: 40
+ cbmcArguments:
+   unwind: 1
